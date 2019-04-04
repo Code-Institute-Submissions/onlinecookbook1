@@ -1,0 +1,119 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #e8dada;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #e8dada;
+}
+
+
+
+
+
+.logo{
+    position: relative;
+  left:40%;
+  
+  width: 20%;
+  height: 50%;
+}
+
+
+#navc  {
+    display: flex;
+    list-style-type: none;
+    justify-content:center;
+}
+
+
+li {
+    padding: 10px;
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+#logosection {
+  vertical-align: center;
+}
+
+
+.mainbody {
+   position: relative;
+    padding: 250px 0;
+    
+    
+    
+    background-size: cover;
+    
+}
+
+
+
+
+.section1{
+
+ background-image: url(/static/img/baking.jpg);
+}
+ 
+ .section2{
+ 
+ background-image: url(/static/img/dinner.jpg);
+ }
+ 
+ .section3{
+ 
+ background-image: url(/static/img/dessert.jpg);
+ }
+ 
+ .section4{
+ background-image: url(/static/img/specialoccasion.jpg);
+}
+
+
+h1{
+    color: white;
+    
+    text-align: center;
+    text-shadow: -2px 2px black;
+}
+
+
+.btn2 { 
+ background-color: #ffff1a; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+   /* Safari */
+  box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 black;
+  
+  position: relative;
+}
+
+
+body .container2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body .container2 div {
+    display: block;
+    
+}
