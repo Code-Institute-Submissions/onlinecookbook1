@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+
+
+
+
+{% block maincontent %}
+
+<h2>Dinner Recipes</h2>
+
+<table>
+  <tr>
+    <th>Dinner Recipe</th>
+    <th>Author name</th>
+    <th>Cusine</th>
+  </tr>
+  <tr>
+    <td><a href="">Cottage pie</a></td>
+    <td>Sam johnson</td>
+    <td>British</td>
+  </tr>
+  <tr>
+    <td><a href="">Sunday roast</a></td>
+    <td>Mary kelly</td>
+    <td>British</td>
+  </tr>
+  <tr>
+    <td><a href="">Fied chicken</a></td>
+    <td>David west</td>
+    <td>Italian</td>
+  </tr>
+  <tr>
+    <td><a href="">French style fish and chips</a></td>
+    <td>Helen Bennetti</td>
+    <td>French</td>
+  </tr>
+  <tr>
+    <td><a href="">Mama's pasta</a></td>
+    <td>Taylor johnson</td>
+    <td>American</td>
+  </tr>
+  
+</table>
+
+
+<div class="container2">
+        
+<h3>Add your dinner recipe here</h3>
+<form method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="csrfmiddlewaretoken" value="MsLnmPTmjAnHnfYsfneDyVS3opikvgNZYeChc678aFNvMKzfBgRfUvI92DIZJSZr"> 
+
+
+
+
+    
+
+
+    <div id="div_id_name" class="form-group  ">
+
+        
+            <label for="id_name" class="control-label required-field ">
+                Name
+            </label>
+        
+
+        
+        
+        
+            
+                <div class="">
+                    <input type="text" name="name" maxlength="254" class=" form-control" required="" id="id_name">
+                    
+                    
+                </div>
+            
+        
+    </div>
+
+
+
+    
+
+
+    <div id="div_id_description" class="form-group  ">
+
+        
+            <label for="id_description" class="control-label required-field ">
+                Description
+            </label>
+        
+
+        
+        
+        
+            
+                <div class="">
+                    <textarea name="description" cols="40" rows="10" class=" form-control" required="" id="id_description"></textarea>
+                    
+                    
+                </div>
+            
+        
+    </div>
+
+
+
+
+    <button type="submit" class="btn btn-info">Save</button>
+</form>
+
+    </div>
+    
+    
+    {% endblock  %}
