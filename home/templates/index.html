@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+ 
+
+
+{% block maincontent %}
+<section class="section1 mainbody">
+
+  <h1>
+ 
+BAKING<br><br>
+<button class="btn2" style="vertical-align:middle"><a href="{% url 'baking' %}">Search/Add</a></button>
+</h1>
+
+</section>
+
+</div>
+
+
+<div>
+<section class="section2 mainbody">
+
+  <h1>
+ 
+DINNER<br><br>
+<button class="btn2" style="vertical-align:middle"><a href="{% url 'dinner' %}">Search/Add</a></button>
+</h1>
+
+</section>
+</div>
+
+<div>
+
+<section class="section3 mainbody">
+
+  <h1>
+ 
+DESSERT<br><br>
+<button class="btn2" style="vertical-align:middle"><a href="{% url 'dessert' %}">Search/Add</a></button>
+</h1>
+
+</section>
+</div>
+
+
+<div>
+
+<section class="section4 mainbody">
+
+  <h1>
+ 
+SPECIAL OCCASION<br><br>
+<button class="btn2" style="vertical-align:middle"><a href="{% url 'specialoccasion' %}">Search/Add</a></button>
+</h1>
+
+</section>
+
+
+
+{% endblock maincontent %}
