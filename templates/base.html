@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Online Cook Book</title>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello...</title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" > 
+ 
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+    </style>
+</head>
+
+<body>
+       
+    <section class="logosection">  
+ <nav class="navbar" id="nav">
+	<a href="{% url 'index' %}"><img class="logo" src="/static/img/recipe-logo.png" ></a>
+
+</section>
+
+<header id="navc">
+<ul class="navbar" >
+  <li class= "navbarcontent"><span><a href="{% url 'dessert' %}" class="navlink">Dessert</span></li>
+  <li class= "navbarcontent"><span><a href="{% url 'dinner' %}" class="navlink">Dinner</a></span></li>
+  <li class= "navbarcontent"><span><a href="{% url 'baking' %}" class="navlink">Baking</a></span></li>
+  <li class= "navbarcontent"><span><a href="{% url 'specialoccasion' %}" class="navlink">Special occasion</a></span></li>
+  <li class= "navbarcontent"><span><a href="{% url 'blog' %}" class="navlink">Blog</a></span></li>
+</ul>
+
+
+</nav>
+</header>
+<div>
+       
+     {% block maincontent %}
+     {% endblock maincontent %}
+     
+     
+   
+</body>
+</html>
+    
+        
+    
+    
